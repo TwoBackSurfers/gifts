@@ -1,0 +1,100 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+i {
+  margin: 0 3px;
+}
+
+.step {
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.step0 {
+  background-image: url(../img/step0.jpg);
+}
+
+/*
+.step1 {
+  background-image: url(../img/step1.jpg);
+}
+
+.step2 {
+  background-image: url(../img/step2.jpg);
+}
+*/
+.step-x {
+  background: rgba(223, 250, 255, 0.77);
+}
+
+.step-write-survey,
+.step-share-with-us,
+.step-browse {
+  text-align: center;
+  width: 100%;
+}
+
+.step-browse {
+  overflow: hidden;
+}
+
+.step-write-survey {
+  position: absolute;
+  color: #fff;
+  text-align: right;
+  top: 7%;
+  right: 5%;
+}
+
+.gifts-container {
+  margin-top: 20px;
+}
+.gifts-container .gift {
+  width: 20%;
+  padding: 10px;
+  float: left;
+}
+.gifts-container img {
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+  font-size: 22px;
+  height: 100px;
+  line-height: 100px;
+  background: rgba(249, 255, 219, 0.4);
+}
+
+.fill {
+  height: 100%;
+}
+
+.tbs-color {
+  color: #ef6742;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

@@ -1,23 +1,72 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>恣遊流浪 x TwoBackSurfers</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
         <!-- 3rd party CSS -->
-        <link rel="stylesheet" href="public/vendor/normalize-css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="public/vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="public/vendor/components-font-awesome/css/font-awesome.min.css">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="public/css/index.css">
 
         <!-- 3rd party js -->
         <script src="public/vendor/jquery/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+        <script src="public/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="//api.filepicker.io/v1/filepicker.js"></script>
+
+        <script src="public/js/index.js"></script>
     </head>
     <body>
-
+      <div class="container fill">
+        <div class="fill">
+          <div class="fill">
+            <div class="step step0">
+              <div class="step-write-survey">
+                <h1><i class="fa fa-smile-o"></i> 讓我們認識你!</h1>
+                <p>對 TwoBackSurfers 來說，每一個人都是支持我們繼續下去的原動力</p>
+                <p>所以，如果你喜歡我們在做的事情也願意支持我們</p>
+                <p>希望你能夠幫我們填寫下面的簡單資訊讓我們把當地的小禮物寄給你們</p>
+                <a href="https://docs.google.com/forms/d/12ufB-34CCGH9W4Te-MSPmQ7OwGiC2k6hTVKrMtlcBn0/viewform?usp=send_form" target="_blank" class="btn btn-lg btn-primary">填寫線上問卷<i class="fa fa-pencil-square-o"></i></a>
+              </div>
+            </div>
+            <div class="step step-x">
+              <div class="step-share-with-us vertical-center">
+                <h1>分享你收到的禮物<i class="fa fa-gift"></i></h1>
+                <p>如果可以的話，是不是能夠上傳一張你和禮物的合照給我們呢?</p>
+                <button class="btn btn-lg btn-info upload"><i class="fa fa-cloud-upload"></i>立馬上傳</button>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-browse fill">
+                <h1><i class="fa fa-globe"></i>看看其他人拿到什麼</h1>
+                  <div class="gifts-container clearfix">
+                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=1"></div>
+                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=2"></div>
+                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=3"></div>
+                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=4"></div>
+                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=5"></div>
+                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=6"></div>
+                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=7"></div>
+                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=8"></div>
+                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=9"></div>
+                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=10"></div>
+                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=11"></div>
+                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=12"></div>
+                  </div>
+              </div>
+            </div>
+            <div class="footer">
+              Made with <span class="tbs-color">❤︎</span> by <a href="http://twobacksurfers.com" target="_blank">恣遊流浪 x TwoBackSurfers</a>
+            </div>
+          </div>
+        </div>
+      </div>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!--
         <script>
