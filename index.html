@@ -23,7 +23,7 @@
         <script src="public/js/index.js"></script>
     </head>
     <body>
-      <div class="container fill">
+      <div class="main-container fill">
         <div class="fill">
           <div class="fill">
             <div class="step step0">
@@ -42,23 +42,21 @@
                 <button class="btn btn-lg btn-info upload"><i class="fa fa-cloud-upload"></i>立馬上傳</button>
               </div>
             </div>
-            <div class="step">
-              <div class="step-browse fill">
-                <h1><i class="fa fa-globe"></i>看看其他人拿到什麼</h1>
-                  <div class="gifts-container clearfix">
-                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=1"></div>
-                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=2"></div>
-                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=3"></div>
-                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=4"></div>
-                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=5"></div>
-                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=6"></div>
-                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=7"></div>
-                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=8"></div>
-                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=9"></div>
-                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=10"></div>
-                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=11"></div>
-                    <div class="gift"><img src="http://lorempixel.com/200/200/?x=12"></div>
-                  </div>
+            <div class="step-browse">
+              <h1><i class="fa fa-globe"></i>看看其他人拿到什麼</h1>
+              <div class="gifts-container clearfix">
+                <div class="gift"><img src="http://lorempixel.com/200/200/?x=1"></div>
+                <div class="gift"><img src="http://lorempixel.com/200/200/?x=2"></div>
+                <div class="gift"><img src="http://lorempixel.com/200/200/?x=3"></div>
+                <div class="gift"><img src="http://lorempixel.com/200/200/?x=4"></div>
+                <div class="gift"><img src="http://lorempixel.com/200/200/?x=5"></div>
+                <div class="gift"><img src="http://lorempixel.com/200/200/?x=6"></div>
+                <div class="gift"><img src="http://lorempixel.com/200/200/?x=7"></div>
+                <div class="gift"><img src="http://lorempixel.com/200/200/?x=8"></div>
+                <div class="gift"><img src="http://lorempixel.com/200/200/?x=9"></div>
+                <div class="gift"><img src="http://lorempixel.com/200/200/?x=10"></div>
+                <div class="gift"><img src="http://lorempixel.com/200/200/?x=11"></div>
+                <div class="gift"><img src="http://lorempixel.com/200/200/?x=12"></div>
               </div>
             </div>
             <div class="footer">
@@ -67,14 +65,54 @@
           </div>
         </div>
       </div>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!--
+
+      <!-- Modal -->
+      <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h2 class="modal-title" id="successModalLabel">成功！</h2>
+            </div>
+            <div class="modal-body">
+              <p>你的照片已經成功上傳了！</p>
+              <p>待我們審核後，就會把你的照片分享給其他的朋友們</p>
+              <p>感謝你的支持 :)</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info" data-dismiss="modal">結束</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h2 class="modal-title" id="errorModalLabel">失敗了 ...</h2>
+            </div>
+            <div class="modal-body">
+              <p>不知道為什麼上傳失敗了 ... </p>
+              <p>麻煩你再重新上傳一次！</P>
+              <p>還有，如果可以的話，</p>
+              <p>可以請你點右邊的連結<a href="mailto:twobacksurfers@gmail.com" class="error-report">寄給我們</a>嗎 ? 感謝!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info" data-dismiss="modal">結束</button>
+            </div>
+          </div>
+        </div>
+      </div>
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-40560393-1', 'auto');
+          ga('send', 'pageview');
         </script>
-        -->
     </body>
 </html>

@@ -15,6 +15,10 @@ i {
   margin: 0 3px;
 }
 
+.main-container {
+  width: 100%;
+}
+
 .step {
   height: 100%;
   position: relative;
@@ -61,7 +65,7 @@ i {
 }
 
 .gifts-container {
-  margin-top: 20px;
+  margin: 20px;
 }
 .gifts-container .gift {
   width: 20%;
